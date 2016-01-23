@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+    <string name="sort_by_popular">Popular</string>
+    <string name="sort_by_highest_rated">Highest Rated</string>
+    <string name="title_activity_movie_detail">Details</string>
+    <string name="release_date_label">Release Date:</string>
+    <string name="no_overview">No overview found.</string>
+    <string name="no_connection">Cannot connect to server.</string>
+</resources>
+

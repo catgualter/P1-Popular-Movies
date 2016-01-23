@@ -1,0 +1,58 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.anagualter.popularmovies.MovieDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/overview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:id="@+id/rating"
+                style="@style/RatingsTextStyle"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/backdrop"
+            style="@style/BackdropStyle" />
+
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="67dp"
+            android:layout_height="97dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@id/backdrop"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/title"
+            style="@style/MovieTitleTextStyle"
+            android:layout_toRightOf="@+id/moviePoster"
+            android:layout_toEndOf="@+id/moviePoster" />
+
+        <TextView
+            android:id="@+id/release_date"
+            style="@style/ReleaseDateTextStyle"
+            android:layout_below="@+id/title"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title" />
+
+        <TextView
+            android:id="@+id/overview"
+            style="@style/OverviewTextStyle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+</ScrollView>
